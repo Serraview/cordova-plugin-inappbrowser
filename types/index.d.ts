@@ -176,6 +176,10 @@ interface InAppBrowser extends Window {
      */
     show(): void;
     /**
+     * Hides InAppBrowser window. Calling this has no effect if the InAppBrowser was already hidden.
+     */
+    hide(): void;
+    /**
      * Injects JavaScript code into the InAppBrowser window.
      * @param script    Details of the script to run, specifying either a file or code key.
      * @param callback  The function that executes after the JavaScript code is injected.
