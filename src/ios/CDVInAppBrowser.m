@@ -936,9 +936,9 @@
 {
     // log fail message, stop spinner, update back/forward
     NSLog(@"webView:didFailLoadWithError - %ld: %@", (long)error.code, [error localizedDescription]);
-	
-	if (error.code == NSURLErrorCancelled)
-	    return;
+
+    if (error.code == NSURLErrorCancelled)
+        return;
 
     self.backButton.enabled = theWebView.canGoBack;
     self.forwardButton.enabled = theWebView.canGoForward;
